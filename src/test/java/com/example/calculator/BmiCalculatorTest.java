@@ -22,10 +22,19 @@ public class BmiCalculatorTest {
         assertNotEquals("Healthy. Your BMI is 20", res);
 
         res=bmiCalculator.calculate(1.5, 60);
-        assertNotEquals("Overweight. Your BMI is 26.6", res);
+        assertNotEquals("Overweight. Your BMI is 26.7", res);
 
         res=bmiCalculator.calculate(1.5, 90);
-        assertNotEquals("Obese. Your BMI is 39", res);
+        assertNotEquals("Obese. Your BMI is 40", res);
+
+        res=bmiCalculator.calculate(1.72, 82);
+        assertNotEquals("Obese. Your BMI is 28.1", res);
+
+        res=bmiCalculator.calculate(1.77, 78);
+        assertNotEquals("Obese. Your BMI is 24.9", res);
+
+        res=bmiCalculator.calculate(157.48, 35);
+        assertNotEquals("Obese. Your BMI is 24.9", res);
 
     }
        

@@ -3,7 +3,8 @@ package com.example.calculator;
 import java.util.Scanner;
 
 public class CalorieCalculator {
-	
+
+	//calculate calories based on age, gender and activityLevel
 	public String calculate(int age, char gender, double h, double w, int activityLevel) {
 		double bmr = (new BmrCalculator()).calculateBmr(age, gender, h, w);
 	    double cal = -1;

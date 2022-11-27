@@ -20,7 +20,8 @@ public class BmrCalculatorTest {
         res=bmrCalculator.calculate(30,'F',1.65,55);
         assertNotEquals("Invalid Inputs", res);
 
-
+        res=bmrCalculator.calculate(24,'M',1.71,79);
+        assertNotEquals("Invalid Inputs", res);
     }
     @Test
     public void calculateBmr()

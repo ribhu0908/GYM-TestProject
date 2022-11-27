@@ -27,7 +27,6 @@ public class BmiCalculator {
 	    } else if (bmi >= 30) {
 	          return "Obese. Your BMI is " + bmi;
 	    }
-    	
     	return "Invalid Inputs";
     }
     

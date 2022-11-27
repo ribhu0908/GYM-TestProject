@@ -7,42 +7,42 @@ import static org.junit.Assert.*;
 public class MassConverterTest {
 	
 	MassConverter massConv = new MassConverter();
-	double res;
+	double weight;
 
     @Test
     public void kgToGram() {
-    	res = massConv.kgToGram(2);
-    	assertEquals(2*1000, res, 0.1);
+        weight = massConv.kgToGram(2);
+    	assertEquals(2*1000, weight, 0.1);
 
     }
 
     @Test
     public void kgToPound() {
-    	res = massConv.kgToPound(2);
-    	assertEquals(2*2.204, res, 0.1);
+        weight = massConv.kgToPound(2);
+    	assertEquals(2*2.204, weight, 0.1);
     }
 
     @Test
     public void gramToKg() {
-    	res = massConv.gramToKg(10000);
-    	assertEquals(10, res, 0.1);
+        weight = massConv.gramToKg(10000);
+    	assertEquals(10, weight, 0.1);
     }
 
     @Test
     public void gramToPound() {
-    	res = massConv.gramToPound(1000);
-    	assertEquals(1000*0.00220462, res, 0.1);
+    	weight = massConv.gramToPound(1000);
+    	assertEquals(1000*0.00220462, weight, 0.1);
     }
 
     @Test
     public void poundToGram() {
-    	res = massConv.poundToGram(15);
-    	assertEquals(15*453.592, res, 0.1);
+    	weight = massConv.poundToGram(15);
+    	assertEquals(15*453.592, weight, 0.1);
     }
 
     @Test
     public void poundToKg() {
-    	res = massConv.poundToKg(50);
-    	assertEquals(50*0.453592, res, 0.1);
+    	weight = massConv.poundToKg(50);
+    	assertEquals(50*0.453592, weight, 0.1);
     }
 }

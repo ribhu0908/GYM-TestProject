@@ -2,6 +2,7 @@ package com.example.calculator;
 
 import java.util.Scanner;
 
+//calculate lean body mass for man and woman
 public class LeanBodyMassCalculator {
 	public double calcBodyMass(char younger, char gender, double height, double weight) {
 		double mass = -1;
@@ -25,6 +26,6 @@ public class LeanBodyMassCalculator {
 		double mass = calcBodyMass(younger, gender, height, weight);
     	if(mass > 0 && mass != -1)
     		return "Lean Body Mass" + mass;
-    	return "Invalid inputs";
+    	return "Sorry! Please enter right input";
 	}
 }

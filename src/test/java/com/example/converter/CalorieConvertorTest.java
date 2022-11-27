@@ -12,20 +12,20 @@ public class CalorieConvertorTest {
 	@Test
 	public void calToJoule() {
 		 CalorieConverter calConv = new CalorieConverter();
-	     double res;
+	     double calories;
 
-	     res=calConv.calToJoule(2);
-	     assertEquals(2*4.1868, res, 0.1);
+		calories=calConv.calToJoule(2);
+	     assertEquals(2*4.1868, calories, 0.1);
 	}
-	
+
 	@SuppressWarnings("deprecation")
 	@Test
 	public void jouleToCal() {
 		 CalorieConverter calConv = new CalorieConverter();
-	     double res;
+	     double calories;
 
-	     res=calConv.jouleToCal(2);
-	     assertEquals(2*0.2388459, res, 0.01);
+		calories=calConv.jouleToCal(2);
+	     assertEquals(2*0.2388459, calories, 0.01);
 	}
 
 }

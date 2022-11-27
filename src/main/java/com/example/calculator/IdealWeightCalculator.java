@@ -4,14 +4,14 @@ import java.util.*;
 
 public class IdealWeightCalculator {
 	
-	
+	//calculate ideal weight for men and woman
 	public double calcWeight(int age, char gen, double height) {
 		double weight = -1;
 		if(age >=2 && age <=80 && height > 0) {
 			if(gen == 'M' || gen == 'm')
-				weight = 50 + (height-152.4)*2.3;
+				weight = 52 + (height-152.4)*1.9;
 			else if(gen == 'F' || gen == 'f')
-				weight = 45.5 + (height-152.4)*2.3;
+				weight = 49 + (height-152.4)*1.7;
 		}
 		return weight;
 	}
